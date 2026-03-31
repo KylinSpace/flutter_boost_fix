@@ -1,5 +1,9 @@
 ## NEXT
 
+## 4.6.6
+1. [android] 替换已废弃的 `FlutterMain.findAppBundlePath()` 为 `FlutterInjector.instance().flutterLoader().findAppBundlePath()`，兼容 Flutter 3.29+ / 3.38.0
+2. [android] 在 `setup()` 方法中显式调用 `FlutterLoader.startInitialization(application)`，修复未继承 `FlutterApplication` 的宿主 App 崩溃问题
+
 ## 4.6.5
 1. [dart]支持业务侧获取当前flutter页面是否是外部路由flutter页面
 
